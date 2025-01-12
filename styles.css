@@ -1,0 +1,180 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  width: 100%;
+  max-width: 800px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.button {
+  flex: 1;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-weight: 500;
+}
+
+.button.back {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.button.back:hover {
+  background-color: #bbf7d0;
+}
+
+.button.over {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.button.over:hover {
+  background-color: #fecaca;
+}
+
+.message {
+  text-align: center;
+  padding: 12px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.week {
+  display: flex;
+  gap: 8px;
+}
+
+.day {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #f3f4f6;
+}
+
+.day.back {
+  background-color: #4ade80;
+}
+
+.day.over {
+  background-color: #f87171;
+}
+
+.streak {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #1e293b;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.footer img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.footer a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Day Labels */
+.day-labels {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  justify-content: center;
+}
+
+.day-label {
+  width: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Clear Data Button */
+.button.clear {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  background-color: #f3f4f6;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button.clear:hover {
+  background-color: #e5e7eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Confetti Effect */
+.confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Confirmation Message */
+.message.congrats {
+  background-color: #4ade80;
+  color: white;
+}
